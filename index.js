@@ -14,7 +14,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const bot = new TelegramBot(token, { polling: true });
 
 const model = genAI.getGenerativeModel({
-  model: 'gemini-2.5-flash',
+  model: 'gemini-3.8-flash',
   systemInstruction: 'Sen samimi, motive edici, gerçekçi ve net konuşan bir kişisel spor ve yaşam koçusun. Kullanıcıya antrenman, beslenme, disiplin ve günlük planlama konularında kısa, uygulanabilir ve gaz verici tavsiyeler ver. Gereksiz uzun destanlar yazma, doğrudan konuya gir.'
 });
 
